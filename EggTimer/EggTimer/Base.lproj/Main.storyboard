@@ -224,7 +224,7 @@
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tV1-he-BIB">
                                 <rect key="frame" x="20" y="73" width="378" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" enabled="NO" state="on" alignment="left" maxValue="25" doubleValue="6.25" tickMarkPosition="above" numberOfTickMarks="25" allowsTickMarkValuesOnly="YES" sliderType="linear" id="5mE-Fy-CVI"/>
+                                <sliderCell key="cell" enabled="NO" state="on" alignment="left" minValue="1" maxValue="25" doubleValue="6" tickMarkPosition="above" numberOfTickMarks="25" allowsTickMarkValuesOnly="YES" sliderType="linear" id="5mE-Fy-CVI"/>
                                 <connections>
                                     <action selector="sliderValueChanged:" target="hAU-3K-n3t" id="TV4-ft-7zc"/>
                                 </connections>

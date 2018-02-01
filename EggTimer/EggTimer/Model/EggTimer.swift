@@ -59,6 +59,8 @@ class EggTimer {
                                      selector: #selector(timerAction),
                                      userInfo: nil,
                                      repeats: true)
+        
+        timerAction()
     }
     
     func resumeTimer() {

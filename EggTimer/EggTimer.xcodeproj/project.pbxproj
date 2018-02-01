@@ -14,6 +14,8 @@
 		22764DF1201EFE4600236B77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22764DEF201EFE4600236B77 /* Main.storyboard */; };
 		22764DFD201EFE4600236B77 /* EggTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22764DFC201EFE4600236B77 /* EggTimerTests.swift */; };
 		22764E08201EFE4600236B77 /* EggTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22764E07201EFE4600236B77 /* EggTimerUITests.swift */; };
+		229606302022FAE800FEEADB /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296062F2022FAE800FEEADB /* Preferences.swift */; };
+		229606322023168100FEEADB /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 229606312023168100FEEADB /* ding.mp3 */; };
 		22CF0ACD202017A8000FF10E /* EggTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF0ACC202017A8000FF10E /* EggTimer.swift */; };
 		22CF0AD72020713B000FF10E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22CF0AD52020713B000FF10E /* Info.plist */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,8 @@
 		22764E03201EFE4600236B77 /* EggTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22764E07201EFE4600236B77 /* EggTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerUITests.swift; sourceTree = "<group>"; };
 		22764E09201EFE4600236B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2296062F2022FAE800FEEADB /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		229606312023168100FEEADB /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
 		22CF0ACC202017A8000FF10E /* EggTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimer.swift; sourceTree = "<group>"; };
 		22CF0AD52020713B000FF10E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CF0AD62020713B000FF10E /* EggTimer.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = EggTimer.entitlements; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 				22CF0ACA202015ED000FF10E /* Model */,
 				22764DED201EFE4600236B77 /* Assets.xcassets */,
 				22764DEF201EFE4600236B77 /* Main.storyboard */,
+				229606312023168100FEEADB /* ding.mp3 */,
 				22CF0AD62020713B000FF10E /* EggTimer.entitlements */,
 				22CF0AD52020713B000FF10E /* Info.plist */,
 			);
@@ -143,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				22CF0ACC202017A8000FF10E /* EggTimer.swift */,
+				2296062F2022FAE800FEEADB /* Preferences.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229606322023168100FEEADB /* ding.mp3 in Resources */,
 				22764DEE201EFE4600236B77 /* Assets.xcassets in Resources */,
 				22764DF1201EFE4600236B77 /* Main.storyboard in Resources */,
 				22CF0AD72020713B000FF10E /* Info.plist in Resources */,
@@ -283,6 +290,7 @@
 			files = (
 				22764DEC201EFE4600236B77 /* ViewController.swift in Sources */,
 				22CF0ACD202017A8000FF10E /* EggTimer.swift in Sources */,
+				229606302022FAE800FEEADB /* Preferences.swift in Sources */,
 				22480032201F1E3000B476D6 /* PrefsViewController.swift in Sources */,
 				22764DEA201EFE4500236B77 /* AppDelegate.swift in Sources */,
 			);
