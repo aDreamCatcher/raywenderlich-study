@@ -15,6 +15,10 @@
 		22B9513120F6085F007E7043 /* CoreTextMagazineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9513020F6085F007E7043 /* CoreTextMagazineTests.swift */; };
 		22B9513C20F6085F007E7043 /* CoreTextMagazineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9513B20F6085F007E7043 /* CoreTextMagazineUITests.swift */; };
 		22B9514A20F611D6007E7043 /* CTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9514920F611D6007E7043 /* CTView.swift */; };
+		22B9514C20F6F186007E7043 /* zombies.txt in Resources */ = {isa = PBXBuildFile; fileRef = 22B9514B20F6F186007E7043 /* zombies.txt */; };
+		22B9514E20F6F1EF007E7043 /* MarkupParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9514D20F6F1EF007E7043 /* MarkupParser.swift */; };
+		22B9515020F74A4F007E7043 /* CTColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9514F20F74A4F007E7043 /* CTColumnView.swift */; };
+		22B9515220F74CDE007E7043 /* CTSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9515120F74CDE007E7043 /* CTSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		22B9513B20F6085F007E7043 /* CoreTextMagazineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTextMagazineUITests.swift; sourceTree = "<group>"; };
 		22B9513D20F6085F007E7043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22B9514920F611D6007E7043 /* CTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTView.swift; sourceTree = "<group>"; };
+		22B9514B20F6F186007E7043 /* zombies.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zombies.txt; sourceTree = "<group>"; };
+		22B9514D20F6F1EF007E7043 /* MarkupParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupParser.swift; sourceTree = "<group>"; };
+		22B9514F20F74A4F007E7043 /* CTColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTColumnView.swift; sourceTree = "<group>"; };
+		22B9515120F74CDE007E7043 /* CTSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +113,11 @@
 				22B9512220F6085F007E7043 /* Assets.xcassets */,
 				22B9512420F6085F007E7043 /* LaunchScreen.storyboard */,
 				22B9512720F6085F007E7043 /* Info.plist */,
+				22B9514B20F6F186007E7043 /* zombies.txt */,
 				22B9514920F611D6007E7043 /* CTView.swift */,
+				22B9514D20F6F1EF007E7043 /* MarkupParser.swift */,
+				22B9514F20F74A4F007E7043 /* CTColumnView.swift */,
+				22B9515120F74CDE007E7043 /* CTSettings.swift */,
 			);
 			path = CoreTextMagazine;
 			sourceTree = "<group>";
@@ -234,6 +246,7 @@
 			files = (
 				22B9512620F6085F007E7043 /* LaunchScreen.storyboard in Resources */,
 				22B9512320F6085F007E7043 /* Assets.xcassets in Resources */,
+				22B9514C20F6F186007E7043 /* zombies.txt in Resources */,
 				22B9512120F60857007E7043 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +274,10 @@
 			files = (
 				22B9511E20F60856007E7043 /* ViewController.swift in Sources */,
 				22B9514A20F611D6007E7043 /* CTView.swift in Sources */,
+				22B9514E20F6F1EF007E7043 /* MarkupParser.swift in Sources */,
+				22B9515220F74CDE007E7043 /* CTSettings.swift in Sources */,
 				22B9511C20F60856007E7043 /* AppDelegate.swift in Sources */,
+				22B9515020F74A4F007E7043 /* CTColumnView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
