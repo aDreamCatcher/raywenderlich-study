@@ -82,13 +82,15 @@ class MarkupParser: NSObject {
                 else if tag.hasPrefix("img") {
                     
                     var filename: String = ""
-                    let imgRegex = try NSRegularExpression(pattern: "(?<=src=\")[^\"]]+)",
+                    let imgRegex = try NSRegularExpression(pattern: "(?<=src=\")[^\"]+",
                                                            options: NSRegularExpression.Options(rawValue: 0))
-                    imgRegex .enumerateMatches(in: markup, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, tag.count)) { (match, _, _) in
+                    imgRegex .enumerateMatches(in: tag,
+                                               options: NSRegularExpression.MatchingOptions(rawValue: 0),
+                                               range: NSMakeRange(0, tag.count)) { (match, _, _) in
                         
                         if let match = match,
                             let range = tag.range(from: match.range) {
-                            filename = String(markup[range])
+                            filename = String(tag[range])
                         }
                     }
                     // 2
@@ -135,7 +137,6 @@ class MarkupParser: NSObject {
                     // 5
                     let attrDictionaryDelegate = [(kCTRunDelegateAttributeName as NSAttributedStringKey): (delegate as Any)]
                     attrString.append(NSAttributedString(string: " ", attributes: attrDictionaryDelegate))
-                    
                     
                 }
                 

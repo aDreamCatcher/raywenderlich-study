@@ -40,7 +40,7 @@ class CTColumnView: UIView {
         for imageData in images {
             if let image = imageData.image.cgImage {
                 let imageBounds = imageData.frame
-                context.draw(imageData, in: imageBounds)
+                context.draw(image, in: imageBounds)
             }
         }
     }
