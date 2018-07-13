@@ -149,16 +149,39 @@ class MarkupParser: NSObject {
 
 // AMRK: - String
 extension String {
+    
+    // NSRange -> Range
     func range(from range: NSRange) -> Range<String.Index>? {
-        guard let from16 = utf16.index(utf16.startIndex,
-                                       offsetBy: range.location,
-                                       limitedBy: utf16.endIndex),
-        let to16 = utf16.index(from16, offsetBy: range.length, limitedBy: utf16.endIndex),
-        let from = String.Index(from16, within: self),
-            let to = String.Index(to16, within: self) else {
-                return nil
-        }
         
-        return from ..< to
+        // swift 4
+        return Range(range, in: self)
+        
+//        // swift 3
+//        guard let from16 = utf16.index(utf16.startIndex,
+//                                       offsetBy: range.location,
+//                                       limitedBy: utf16.endIndex),
+//        let to16 = utf16.index(from16, offsetBy: range.length, limitedBy: utf16.endIndex),
+//        let from = String.Index(from16, within: self),
+//            let to = String.Index(to16, within: self) else {
+//                return nil
+//        }
+//
+//        return from ..< to
     }
+    
+    // Range -> NSRange
+    func nsRange(from range: Range<String.Index>) -> NSRange {
+        // swift 4
+        return NSRange(range, in: self)
+        
+//        // swift 3
+//        let from = range.lowerBound.samePosition(in: utf16)
+//        let to = range.upperBound.samePosition(in: utf16)
+//        return NSRange(location: utf16.distance(from: utf16.startIndex, to: from),
+//                       length: utf16.distance(from: from, to: to))
+
+    }
+    
+    
+    
 }
